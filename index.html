@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Password-Generator</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Password Indicator</h1>
+    </header>
+
+    <div id="message" class="alert alert-success" role="alert">
+      <h3>Password must contain the following:</h3>
+      <p id="letter">A <b>lowercase</b> letter</p>
+      <p id="capital">A <b>capital (uppercase)</b> letter</p>
+      <p id="number">A <b>number</b></p>
+      <p id="Symbols"><b>At least Two Symbols</b></p>
+      <p id="length">Minimum <b>8 characters</b></p>
+    </div>
+
+    <div class="container1">
+      <header class="header2">Password Strength Indicator</header>
+      <form action="#">
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            id="formGroupExampleInput"
+            placeholder="Enter your password"
+          />
+          <span class="showBtn">Hide</span>
+        </div>
+        <div class="indicator">
+          <span class="weak"></span>
+          <span class="medium"></span>
+          <span class="strong"></span>
+        </div>
+        <div class="text">Your Password is too weak</div>
+      </form>
+    </div>
+    <div class="disclaimer">
+      <h1>Disclaimer</h1>
+      <p>
+        This application is designed to assess the strength of password strings.
+        The instantaneous visual feedback provides the user a means to improve
+        the strength of their passwords, with a hard focus on breaking the
+        typical bad habits of faulty password formulation. Since no official
+        weighting system exists, we created our own formulas to assess the
+        overall strength of a given password.This application is
+        neither perfect nor foolproof, and should only be utilized as a loose
+        guide in determining methods for improving the password creation
+        process.
+      </p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small unique-color-dark pt-4">
+      <div class="container">
+        <ul class="list-unstyled list-inline text-center py-2">
+          <li class="list-inline-item">
+            <h5 class="mb-1">Register for free</h5>
+          </li>
+          <li class="list-inline-item">
+            <a href="#!" class="btn btn-outline-danger btn-rounded">Sign up!</a>
+          </li>
+        </ul>
+      </div>
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">
+        © 2020 Copyright:
+        <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

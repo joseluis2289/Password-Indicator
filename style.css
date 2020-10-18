@@ -1,0 +1,330 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Orbitron", sans-serif;
+}
+
+html,
+body {
+  display: grid;
+  text-align: center;
+ background-color: #759523;
+background-image: linear-gradient(43deg, #759523 21%, #66763a 53%, #45571c 80%);
+
+}
+#message {
+  width: 500px;
+  margin-top: 10px;
+  margin-bottom: 210px;
+  display: none;
+  color: #445223;
+  margin-left: 358px;
+}
+.disclaimer {
+  border-radius: 10px;
+  width: 500px;
+  margin-top: 30px;
+  box-shadow: 0 0 15px rgb(26, 32, 16);
+  padding: 10px;
+  margin-left: 358px;
+}
+
+.header {
+  margin-top: 10px;
+  background-color: #000;
+  color: #91ae4b;
+  width: 100%;
+  height: 100px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 1);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* header 2 password strength indicator */
+.header2 {
+  color: white;
+  margin-bottom:10px;
+}
+#wellDone {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.container1 {
+  width: 500px;
+  margin-left: 358px;
+  height: 200px;
+  margin-top: -200px;
+  padding: 20px 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 1);
+}
+.showBtn {
+  display: flex;
+  width: 10%;
+  margin-left: 290px;
+}
+.container form {
+  margin: 20px 5px 10px 5px;
+}
+form .form-group {
+  height: 45px;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+form .form-group input {
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s;
+}
+.form-control{
+ outline-color: #dd1313;
+}
+
+form .form-group .showBtn {
+  position: absolute;
+  left: 100px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: 600;
+  display: none;
+}
+form .indicator {
+  height: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+  display: none;
+}
+form .indicator span {
+  width: 100%;
+  height: 100%;
+  background: lightgray;
+  border-radius: 5px;
+  position: relative;
+}
+form .indicator span.medium {
+  margin: 0 3px;
+}
+form .indicator span:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+form .indicator span.active.weak:before {
+  background-color: #ff4757;
+}
+form .indicator span.active.medium:before {
+  background-color: orange;
+}
+form .indicator span.active.strong:before {
+  background-color: #23ad5c;
+}
+
+form .text {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: -10px;
+  display: none;
+}
+form .text.weak {
+  color: #ff4757;
+}
+form .text.medium {
+  color: orange;
+}
+form .text.strong {
+  color: #23ad5c;
+}
+
+.page-footer {
+  background-color: #303f1d;
+  background-image: linear-gradient(160deg, #303f1d 0%, #000000 100%);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 1);
+  color: white;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .showBtn {
+    display: flex;
+    width: 10%;
+    margin-left: 90px;
+  }
+  form .text {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: -10px;
+    display: none;
+  }
+  form .text.weak {
+    color: #ff4757;
+  }
+  form .text.medium {
+    color: orange;
+  }
+  form .text.strong {
+    color: #23ad5c;
+  }
+  #message {
+    width: 280px;
+    margin-top: 10px;
+    margin-bottom: 210px;
+    display: none;
+    color: #445223;
+    margin-left: 40px;
+  }
+  .container1 {
+    width: 300px;
+    margin-left: 30px;
+    height: 200px;
+    margin-top: -200px;
+    padding: 20px 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 1);
+  }
+  .header {
+    background-color: #000;
+    color: #91ae4b;
+    width: 100%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 1);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .disclaimer {
+    border-radius: 10px;
+    width: 500px;
+    margin-top: 30px;
+    box-shadow: 0 0 15px rgb(26, 32, 16);
+    padding: 10px;
+    margin-left: 30px;
+    width: 300px;
+  }
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .showBtn {
+    display: flex;
+    width: 10%;
+    margin-left: 150px;
+  }
+  
+  .header {
+    margin-top: 10px;
+    background-color: #000;
+    color: #91ae4b;
+    width: 100%;
+    height: 100px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 1);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content:start; 
+  }
+  h1{
+    text-align: center;
+    margin-left: 20px;
+  }
+  #message {
+    width: 350px;
+    margin-top: 10px;
+    margin-bottom: 210px;
+    display: none;
+    color: #445223;
+    margin-left: 50px;
+  }
+  .container1 {
+    width: 350px;
+    margin-left: 50px;
+    height: 200px;
+    margin-top: -200px;
+    padding: 20px 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 1);
+  }
+  .disclaimer {
+    border-radius: 10px;
+    width: 500px;
+    margin-top: 30px;
+    box-shadow: 0 0 15px rgb(26, 32, 16);
+    padding: 10px;
+    margin-left: 50px;
+    width: 350px;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait) and Desktop
+  ##Screen = B/w 768px to 1024px
+
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .showBtn {
+    display: flex;
+    width: 10%;
+    margin-left: 240px;
+  }
+  .header {
+    margin-top: 10px;
+    background-color: #000;
+    color: #91ae4b;
+    width: 100%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 1);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content:center; 
+   
+  }
+  h1{
+    text-align: center;
+  }
+  #message {
+    width: 450px;
+    margin-top: 10px;
+    margin-bottom: 210px;
+    display: none;
+    color: #445223;
+    margin-left: 155px;
+  }
+  .container1 {
+    width: 450px;
+    height: 200px;
+    margin-top: -200px;
+    padding: 20px 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 1);
+    margin-left:155px;
+  }
+  .disclaimer {
+    border-radius: 10px;
+    margin-top: 30px;
+    box-shadow: 0 0 15px rgb(26, 32, 16);
+    padding: 10px;
+    margin-left: 155px;
+    width: 450px;
+  }
+}
