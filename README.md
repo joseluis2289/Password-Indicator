@@ -1,4 +1,4 @@
-#Password Strength Indicator
+##Password Strength Indicator
 This project is made using HTML,CSS and Vanilla JavaScript.
 This Web page is responsive for the following resolutions:
 
